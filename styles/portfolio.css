@@ -96,9 +96,10 @@ p {
 }
 
 .btn-branding-outline {
-  color: var(--branding-color);
-  border: 3px solid var(--branding-color);
-  border-radius: 4px;
+  color: white;
+  background: var(--branding-color);
+  border: 4px solid var(--branding-color);
+  border-radius: 5px;
   font-size: 18px;
   line-height: 27px;
   font-weight: bold;
@@ -120,7 +121,7 @@ p {
 }
 
 .logo {
-  max-height: 80px;
+  max-height: 90px;
 }
 
 nav {
@@ -143,7 +144,12 @@ nav ul {
   color: rgb(201, 235, 243);
 }
 
-.content a:hover {
+.about-links a {
+  font-size: 16px;
+}
+
+.about-links a:hover,
+.works a:hover {
   color: rgb(212, 124, 212);
 }
 
@@ -151,9 +157,10 @@ nav a {
   text-decoration: none;
   color: #aac5d1;
   transition: all 100ms ease-in-out;
-  font-size: 12px;
+  font-size: 17px;
 }
 
+.links:hover,
 nav a:hover,
 nav li.active a {
   color: var(--branding-color);
