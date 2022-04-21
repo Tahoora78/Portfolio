@@ -1,8 +1,9 @@
 :root {
-  --branding-color: #6c63ff;
-  --secondary-color: #f9f7fe;
+  --branding-color: #ac74c4;
+  --secondary-color: #dedae7;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
+  --button-color: rgb(180, 84, 180);
 }
 
 body,
@@ -15,6 +16,10 @@ h6 {
   color: black;
   font-family: var(--heading-font-family);
   font-weight: bold;
+}
+
+body {
+  background: rgb(26, 91, 165);
 }
 
 h1 {
@@ -35,6 +40,7 @@ p {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
+  color: rgb(199, 180, 98);
 }
 
 .hero {
@@ -81,9 +87,9 @@ p {
 }
 
 .btn-branding {
-  background: var(--branding-color);
-  border-radius: 4px;
-  color: white;
+  background: var(--button-color);
+  border-radius: 10px;
+  color: rgb(209, 217, 224);
   font-size: 18px;
   line-height: 27px;
   padding: 12px 20px;
@@ -91,10 +97,11 @@ p {
 
 .btn-branding-outline {
   color: var(--branding-color);
-  border: 1px solid var(--branding-color);
+  border: 3px solid var(--branding-color);
   border-radius: 4px;
   font-size: 18px;
   line-height: 27px;
+  font-weight: bold;
   padding: 15px 30px;
 }
 
@@ -113,7 +120,7 @@ p {
 }
 
 .logo {
-  max-height: 40px;
+  max-height: 80px;
 }
 
 nav {
@@ -132,9 +139,17 @@ nav ul {
   margin: 0;
 }
 
+.content a {
+  color: rgb(201, 235, 243);
+}
+
+.content a:hover {
+  color: rgb(212, 124, 212);
+}
+
 nav a {
   text-decoration: none;
-  color: #272142;
+  color: #aac5d1;
   transition: all 100ms ease-in-out;
   font-size: 12px;
 }
@@ -173,7 +188,7 @@ footer .contact-box p {
 
 footer .social-links a {
   margin: 0 20px;
-  color: var(--branding-color);
+  color: var(--button-color);
   background: var(--secondary-color);
   padding: 10px 14px;
   font-size: 18px;
@@ -181,9 +196,13 @@ footer .social-links a {
   transition: all 100ms ease-in-out;
 }
 
+.links {
+  color: rgb(16, 17, 95);
+}
+
 footer .social-links a:hover {
   color: white;
-  background: var(--branding-color);
+  background: var(--button-color);
 }
 
 @media (max-width: 900px) {
